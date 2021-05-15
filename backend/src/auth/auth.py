@@ -10,11 +10,6 @@ ALGORITHMS = ['RS256']
 API_AUDIENCE = 'drinks'
 
 
-"""
-User login URL:
-    https://cemakdag-services.eu.auth0.com/authorize?audience=drinks&response_type=token&client_id=eNT9jvBWNmEbadKnXBVP0OhaJjD1FcYa&redirect_uri=https://127.0.0.1:8100/login-results
-
-"""
 # AuthError Exception
 '''
 AuthError Exception
