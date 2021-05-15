@@ -3,6 +3,7 @@ env/
 __pycache__/
 test.db
 frontend/node_modules
+backend/src/settings.yml
 
 # OS generated files #
 ######################
