@@ -3,11 +3,12 @@ from flask import request, _request_ctx_stack, abort
 from functools import wraps
 from jose import jwt
 from urllib.request import urlopen
+import yaml
 
-
-AUTH0_DOMAIN = 'cemakdag-services.eu.auth0.com'
+AUTH0_CONFIG = yaml.safe_load(open('settings.yml'))
+AUTH0_DOMAIN = AUTH0_CONFIG['auth0']['domain'] + '.auth0.com'
 ALGORITHMS = ['RS256']
-API_AUDIENCE = 'drinks'
+API_AUDIENCE = AUTH0_CONFIG['auth0']['audience']
 
 
 # AuthError Exception
